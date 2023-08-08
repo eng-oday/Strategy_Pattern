@@ -13,6 +13,13 @@
 		F8B7EF8B2A825C8100C098CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B7EF892A825C8100C098CD /* Main.storyboard */; };
 		F8B7EF8D2A825C8200C098CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B7EF8C2A825C8200C098CD /* Assets.xcassets */; };
 		F8B7EF902A825C8200C098CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B7EF8E2A825C8200C098CD /* LaunchScreen.storyboard */; };
+		F8B7EF992A825D8300C098CD /* DataSourceBehaviorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7EF982A825D8300C098CD /* DataSourceBehaviorProtocol.swift */; };
+		F8B7EF9D2A825DEE00C098CD /* DomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7EF9C2A825DEE00C098CD /* DomainModel.swift */; };
+		F8B7EFA02A825E9F00C098CD /* CoreDataSourceBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7EF9F2A825E9F00C098CD /* CoreDataSourceBehavior.swift */; };
+		F8B7EFA22A825EAF00C098CD /* MemoryDataSourceBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7EFA12A825EAF00C098CD /* MemoryDataSourceBehavior.swift */; };
+		F8B7EFA42A825EBF00C098CD /* RealmDataSourceBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7EFA32A825EBF00C098CD /* RealmDataSourceBehavior.swift */; };
+		F8B7EFA62A825F7500C098CD /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7EFA52A825F7500C098CD /* UserModel.swift */; };
+		F8B7EFA82A8261AC00C098CD /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7EFA72A8261AC00C098CD /* ListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		F8B7EF8C2A825C8200C098CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8B7EF8F2A825C8200C098CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8B7EF912A825C8200C098CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8B7EF982A825D8300C098CD /* DataSourceBehaviorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceBehaviorProtocol.swift; sourceTree = "<group>"; };
+		F8B7EF9C2A825DEE00C098CD /* DomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainModel.swift; sourceTree = "<group>"; };
+		F8B7EF9F2A825E9F00C098CD /* CoreDataSourceBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSourceBehavior.swift; sourceTree = "<group>"; };
+		F8B7EFA12A825EAF00C098CD /* MemoryDataSourceBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDataSourceBehavior.swift; sourceTree = "<group>"; };
+		F8B7EFA32A825EBF00C098CD /* RealmDataSourceBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDataSourceBehavior.swift; sourceTree = "<group>"; };
+		F8B7EFA52A825F7500C098CD /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		F8B7EFA72A8261AC00C098CD /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 		F8B7EF822A825C8100C098CD /* Strategy_Pattern */ = {
 			isa = PBXGroup;
 			children = (
+				F8B7EF972A825C8C00C098CD /* ExampleOfPattern */,
 				F8B7EF832A825C8100C098CD /* AppDelegate.swift */,
 				F8B7EF852A825C8100C098CD /* SceneDelegate.swift */,
 				F8B7EF872A825C8100C098CD /* ViewController.swift */,
@@ -65,6 +80,44 @@
 				F8B7EF912A825C8200C098CD /* Info.plist */,
 			);
 			path = Strategy_Pattern;
+			sourceTree = "<group>";
+		};
+		F8B7EF972A825C8C00C098CD /* ExampleOfPattern */ = {
+			isa = PBXGroup;
+			children = (
+				F8B7EF9B2A825DDC00C098CD /* Model */,
+				F8B7EF9A2A825DD300C098CD /* Protocol */,
+				F8B7EFA72A8261AC00C098CD /* ListController.swift */,
+			);
+			path = ExampleOfPattern;
+			sourceTree = "<group>";
+		};
+		F8B7EF9A2A825DD300C098CD /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F8B7EF982A825D8300C098CD /* DataSourceBehaviorProtocol.swift */,
+				F8B7EF9E2A825E7D00C098CD /* BehaviorOfDataSource */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F8B7EF9B2A825DDC00C098CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8B7EF9C2A825DEE00C098CD /* DomainModel.swift */,
+				F8B7EFA52A825F7500C098CD /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8B7EF9E2A825E7D00C098CD /* BehaviorOfDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				F8B7EF9F2A825E9F00C098CD /* CoreDataSourceBehavior.swift */,
+				F8B7EFA12A825EAF00C098CD /* MemoryDataSourceBehavior.swift */,
+				F8B7EFA32A825EBF00C098CD /* RealmDataSourceBehavior.swift */,
+			);
+			path = "\U0010BehaviorOfDataSource";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +192,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8B7EF882A825C8100C098CD /* ViewController.swift in Sources */,
+				F8B7EFA82A8261AC00C098CD /* ListController.swift in Sources */,
+				F8B7EFA02A825E9F00C098CD /* CoreDataSourceBehavior.swift in Sources */,
+				F8B7EFA22A825EAF00C098CD /* MemoryDataSourceBehavior.swift in Sources */,
 				F8B7EF842A825C8100C098CD /* AppDelegate.swift in Sources */,
+				F8B7EFA42A825EBF00C098CD /* RealmDataSourceBehavior.swift in Sources */,
+				F8B7EF9D2A825DEE00C098CD /* DomainModel.swift in Sources */,
+				F8B7EF992A825D8300C098CD /* DataSourceBehaviorProtocol.swift in Sources */,
+				F8B7EFA62A825F7500C098CD /* UserModel.swift in Sources */,
 				F8B7EF862A825C8100C098CD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

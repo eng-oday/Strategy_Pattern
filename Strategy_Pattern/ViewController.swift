@@ -9,11 +9,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let memoryBehavior = ListController(dataSource: MemoryDataSourceBehavior())
+    let coreDataBehavior = ListController(dataSource: CoreDataSourceBehavior())
+    let realmBehavior = ListController(dataSource: RealmDataSourceBehavior())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    }
+        coreDataBehavior.displayMode()
+        realmBehavior.displayMode()
+        memoryBehavior.displayMode()
 
+    }
 
 }
 
